@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Portifolio</title>
+  </head>
+  <body>
+    <header>
+      <h1>{ Isabely Marques }<span class="underline">_</span></h1>
+      <div class="navbar">
+        <nav>
+          <button><a href="#sobre-mim">About Me</a></button>
+          <button><a href="#formacao">Formação Acadêmica</a></button>
+          <button><a href="#portifolio">Portifolio</a></button>
+          <button><a id="contactButton">Contato</a></button>
+        </nav>
+      </div>
+    </header>
+    <section class="animated bounceInLeft" id="sobre-mim">
+      <div class="console">
+        <div class="tab-bar">
+          <div class="red"></div>
+          <div class="yellow"></div>
+          <div class="green"></div>
+        </div>
+        <hr>
+        <h1>Sobre</h1>
+        <p>Nome: Isabely Marques</p>
+        <p>Olá! Sou uma estudante de Engenharia de Software na UNINTER, apaixonada por explorar as possibilidades do mundo digital. Além dos estudos, gosto de dedicar meu tempo livre a alguns hobbies, como programação de jogos, música e leitura. Estou comprometida em expandir meus horizontes acadêmicos e pessoais, enquanto busco maneiras inovadoras de aplicar meu conhecimento na área de tecnologia.</p>
+      </div>
+      <section id="formacao">
+        <div class="widown">
+          <div class="console">
+            <div class="tab-bar">
+              <div class="red"></div>
+              <div class="yellow"></div>
+              <div class="green"></div>
+            </div>
+            <hr>
+            <h1>Formação Acadêmica</h1>
+            <p>
+              Sou uma estudante iniciante em Engenharia de Software na UNINTER, animada para mergulhar no mundo da tecnologia. Ao longo do curso, tenho explorado diversas linguagens de programação, como Dart, Python, HTML, CSS, Java e JavaScript. Além disso, possuo fluência em inglês, o que me permite acessar recursos e materiais de aprendizado adicionais nesse idioma. Dedico meu tempo livre a aprimorar minhas habilidades nessas linguagens e a desenvolver projetos pessoais. Estou entusiasmada para expandir meu conhecimento e contribuir de forma significativa para o campo da Engenharia de Software
+            </p>
+              </div>
+      </section>
+      <section id="portifolio">
+        <div class="content">
+          <div class="projects">
+            <h1>Portifolio</h1>
+            <div class="container">
+              <label class="projeto" for="projeto1" tabindex="0">Sleepy Code</label>
+              <input type="checkbox" id="projeto1" class="projeto-checkbox">
+              <div class="conteudo-projeto">
+                <div class="tab-bar">
+                  <div class="red"><label for="projeto1"><span class="x"></span></label></div>
+                  <h1 class="tab-bar-title">sleepycode.vsix</h1>
+                </div>
+                <hr>
+                <h1>Sleepy Code 🌙</h1>
+                <p>Sleepy Code é uma extensão para o Visual Studio Code que oferece um tema de cor escura com tons de roxo, projetado para proporcionar uma experiência de codificação relaxante.</p>
+                <h1>Instalação</h1>
+                <p>Você pode instalar o tema diretamente no Visual Studio Code. Siga estas etapas:</p>
+                <ul>
+                  <li>Abra o Visual Studio Code.</li>
+                  <li>Vá para as configurações de tema. Você pode acessar isso clicando em "File" (Arquivo) > "Preferences" (Preferências) > "Color Theme" (Tema de Cor), ou simplesmente pressionando Ctrl + K seguido de Ctrl + T.</li>
+                  <li>Na caixa de pesquisa, digite "Sleepy Code" e pressione Enter.</li>
+                  <li>Clique em "Install" (Instalar) ao lado do tema "Sleepy Code".</li>
+                </ul>
+                <p>Alternativamente, você pode instalar o tema clicando <span><a href="https://marketplace.visualstudio.com/items?itemName=yellowcat.sleepycode#:~:text=Sleepy%20Code%20is%20a%20Visual,offer%20a%20relaxing%20coding%20experience.">aqui</a></span></p>
+              </div>
+              <label class="projeto" for="projeto2" tabindex="0">Login Page</label>
+              <input type="checkbox" id="projeto2" class="projeto-checkbox">
+              <div class="conteudo-projeto">
+                <div class="tab-bar">
+                  <div class="red"><label for="projeto2"><span class="x"></span></label></div>
+                  <h1 class="tab-bar-title">loginpage.html</h1>
+                </div>
+                <hr>
+                <h1>Login Page</h1>
+                <p>O projeto da tela de login é uma implementação prática dos conceitos aprendidos em suas aulas sobre desenvolvimento web. A tela de login é uma parte essencial de muitos sistemas, fornecendo uma interface para que os usuários autentiquem suas identidades antes de acessar o sistema. você pode acessar ela <span><a href="https://github.com/yellowcatx/booksClub"> aqui</a></span>
+                </p>
+              </div>
+          </div>
+      </section>
+    </section>
+    <footer id="footer">
+      <div class="back">
+        <div class="front">
+          <nav class="nav-bar">
+            <div class="red"></div>
+            <div class="yellow"></div>
+            <div class="green"></div>
+          </nav>
+            <div>
+              <h1 class="titulo1">Me Encontre Aqui!</h1>
+              <p class="texto">Se quer bater um papo sobre ideias criativas, estou a um clique de distância! Ou, se quiser dar uma olhada nesse e em outros projetos, acesse meu GitHub abaixo:</p>
+              <a href="https://github.com/yellowcatx"><img class="git-icon" src="github-mark-white.svg" alt></a>
+            </div>
+            <form>
+              <label for>Nome</label>
+              <input type="text" placeholder="Nome">
+              <label for="email"> Email</label>
+              <input type="email" placeholder="Email" name id>
+              <label for>Mensagem</label>
+              <input type="text" class="text" placeholder="Mensagem">
+              <button class="enviar">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    // Função para rolar suavemente até o footer quando o botão "Contato" for clicado
+    document.getElementById("contactButton").addEventListener("click", function() {
+      document.getElementById("footer").scrollIntoView({ behavior: "smooth" });
+    });
+  </script>
+</html>

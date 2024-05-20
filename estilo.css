@@ -1,0 +1,231 @@
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000;
+  padding: 20px;
+  border-bottom: 3px solid #1e1e1e;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.underline {
+  animation: blink 1s step-start infinite;
+}
+.navbar nav button a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar nav button {
+  background: #444;
+  border: none;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.navbar nav button:hover {
+  background: #555;
+}
+
+.animated {
+  animation-duration: 1s;
+}
+
+@keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  from {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.bounceInLeft {
+  animation-name: bounceInLeft;
+}
+
+.console {
+  background: #1e1e1e;
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.tab-bar {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.tab-bar div {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+/* Footer */
+footer {
+  background-color: #000;
+  padding: 20px 0;
+}
+
+
+.nav-bar {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.nav-bar .red,
+.nav-bar .yellow,
+.nav-bar .green {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.projeto {
+  background-color: #444;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+.projeto-checkbox {
+  display: none;
+}
+
+.conteudo-projeto {
+  background-color: #1e1e1e;
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 10px;
+  display: none;
+}
+
+.projeto-checkbox:checked + .conteudo-projeto {
+  display: block;
+}
+
+.git-icon {
+  width: 50px;
+  height: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+form label {
+  margin: 10px 0 5px;
+}
+
+form input, form button {
+  width: 300px;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #444;
+}
+
+form button {
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+footer .titulo1 {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+footer .titulo2 {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+footer .texto {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+footer .git-icon {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
